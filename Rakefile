@@ -33,7 +33,7 @@ namespace :site do
   task :build do
     check_destination
     sh "bundle exec jekyll build"
-    sh "cp ./assets/ads.txt #{DESTINATION}"
+    sh "cp ./ads.txt #{DESTINATION}"
   end
 
   desc "Generate the site and serve locally"
@@ -64,7 +64,7 @@ namespace :site do
     sh "bundle exec jekyll build"
 
     # Copy static assets
-    sh "cp ./assets/ads.txt #{DESTINATION}"
+    sh "cp ./ads.txt #{DESTINATION}"
 
     # Commit and push to github
     sha = `git log`.match(/[a-z0-9]{40}/)[0]
