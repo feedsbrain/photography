@@ -7,8 +7,8 @@ words_per_minute: 200
 
 # Base configs
 baseurl: /
-image_fulls_loc: "/images/fulls"
-image_thumbs_loc: "/images/thumbs"
+image_fulls_loc: "images/fulls"
+image_thumbs_loc: "images/thumbs"
 google_analytics: "UA-4727807-2"
 
 # UI configs
@@ -75,7 +75,6 @@ git_name: Indra Gunawan
 git_email: feedsbrain@gmail.com
 
 exclude:
-  - assets/css
   - node_modules
   - vendor
   - .travis.yml
