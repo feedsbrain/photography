@@ -61,15 +61,15 @@ feed:
 safe: False
 lsi: False
 username: feedsbrain
-repo: indragunawan.com
+repo: photography
 branch: master
-relative_source: ../indragunawan.com/
+relative_source: ../photography/
 destination: ./_site/
 # for sitemap plugin
-url: https://indragunawan.com
+url: https://photos.indragunawan.com
 # for jekyll
-production_url: https://indragunawan.com/
-source_url: https://github.com/feedsbrain/indragunawan.com/
+production_url: https://photos.indragunawan.com/
+source_url: https://github.com/feedsbrain/photography/
 # for deployment
 git_name: Indra Gunawan
 git_email: feedsbrain@gmail.com
