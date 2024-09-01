@@ -10,6 +10,7 @@ baseurl: /
 image_fulls_loc: "images/fulls"
 image_thumbs_loc: "images/thumbs"
 google_analytics: "UA-4727807-2"
+CNAME: indragunawan.com
 
 # UI configs
 title: "IG Photography"
