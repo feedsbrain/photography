@@ -1,6 +1,12 @@
+# Jekyll configuration
+markdown: kramdown
+highlighter: rouge
+paginate: 6 # it will paginate after this number
+language: "en-us"
+words_per_minute: 200
+
 # Base configs
-baseurl: "https://photos.indragunawan.com"
-#baseurl: "" # Comment the above line and uncomment this to test the website locally
+baseurl: /
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 google_analytics: "UA-4727807-2"
@@ -26,3 +32,62 @@ social_urls:
   dribbble:
   linkedin: "https://in.linkedin.com/in/feedsbrain"
   github: "https://www.github.com/feedsbrain"
+
+# gems and other configs
+plugins_dir: [_plugins]
+plugins: [jekyll-paginate, jekyll-feed, jekyll-sitemap]
+
+feed:
+  path: feed.xml
+
+# Additional settings available on the front-matter
+# Site logo in the index.html (as in demo.ghost.io)
+# Author's page cover in _layouts/author.html
+# The same for page.html and tag.html layouts
+# Post's page cover as a per-post basis _posts/...
+# Disqus comments as a per-post basis
+# ...
+
+# Settings for building master branch with travis-ci
+# with jekyll-travis
+
+# Settings for deploy rake task
+# Username and repo of Github repo, e.g.
+# https://github.com/USERNAME/REPO.git
+# username defaults to ENV['GIT_NAME'] used by Travis
+# repo defaults to USERNAME.github.io
+# Branch defaults to "source" for USERNAME.github.io
+# or "master" otherwise
+safe: False
+lsi: False
+username: feedsbrain
+repo: indragunawan.com
+branch: master
+relative_source: ../indragunawan.com/
+destination: ./_site/
+# for sitemap plugin
+url: https://indragunawan.com
+# for jekyll
+production_url: https://indragunawan.com/
+source_url: https://github.com/feedsbrain/indragunawan.com/
+# for deployment
+git_name: Indra Gunawan
+git_email: feedsbrain@gmail.com
+
+exclude:
+  - assets/css
+  - node_modules
+  - vendor
+  - .travis.yml
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README.md
+  - script.py
+  - changelog.md
+  - "*.Rmd"
+  - .git*
